@@ -1,0 +1,25 @@
+#PBS -S /bin/bash
+#PBS -N test1
+#PBS -o job.pbo
+#PBS -j oe
+#PBS -q workq
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=9999:00:00
+#PBS -V
+#-----------------------------------------------------------------------
+jobname="test1"
+cd $PBS_O_WORKDIR
+#-----------------------------------------------------------------------
+echo "Number of cores: 1"
+echo "pbs nodefile:"
+cat  $PBS_NODEFILE
+echo "Starting run at" `date`
+#-------------------------------------------------------------------------------
+# run
+#
+ifort -O2 global-mpi_mod.f90 utility_mod.f90 initialize_mod.f90 scmft_mod.f90 var_mod.f90 main.f90 -o ok
+./ok
+#-------------------------------------------------------------------------------
+echo "Finished run at" `date`
+echo 
+#-------------------------------------------------------------------------------

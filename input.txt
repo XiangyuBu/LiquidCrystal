@@ -1,0 +1,26 @@
+0.5                !azo_position     ! azo position / L from the free end
+0.4d0              ! ratio_sigma grafting density ratio between substrate and sphere sigma_p/sigma_s
+0.2d0              ! interaction parameter 
+2.0d0              ! L/a
+0.25d0             ! radius of sphere/L
+42                 ! number of grafted chains
+0.1d0              ! mixing parameter
+80                 ! number of bonds
+5                  ! number of conformations
+150                ! number of points in r direction  
+300                ! number of points in z direction
+5000               ! number of prerotated   
+200                ! number of move in a MC step 
+20                 ! Max of iterations
+1                  ! num==1 ,pivot move with no small pivot move 
+0.1d0              ! the limitation of the random move angle 
+0.05d0             ! the limitation of the sphere move angle
+1.0d0              ! trial move max
+1.0d0              ! real loa
+1.0d0              !  loa of azo
+2000                 ! number of polymers
+10                   ! number of bonds on liquid crystal polymers
+10                 ! lattice of theta in [0,pi/2] by discretlizing delta_z in [0, 1]
+20                 ! lattice of phi in [-pi,pi] by discretlizing delta_x in [-1, 1]
+1                  ! 0 for trans (straight line) ; 1 for sis (folding)  
+0             ！initial length
