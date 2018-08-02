@@ -18,7 +18,7 @@
 1.0d0              ! trial move max
 1.0d0              ! real loa
 1.0d0              !  loa of azo
-2000                 ! number of polymers
+200                 ! number of polymers
 10                   ! number of bonds on liquid crystal polymers
 10                 ! lattice of theta in [0,pi/2] by discretlizing delta_z in [0, 1]
 20                 ! lattice of phi in [-pi,pi] by discretlizing delta_x in [-1, 1]
